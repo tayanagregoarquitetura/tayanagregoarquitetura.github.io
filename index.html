@@ -13,7 +13,9 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -110,7 +112,9 @@ nav a:hover {
   border-radius:14px;
   text-decoration:none;
   font-weight:bold;
-  transition:.3s;
+  transition:.35s ease;
+  position:relative;
+  overflow:hidden;
 }
 
 .btn-primary {
@@ -124,7 +128,8 @@ nav a:hover {
 }
 
 .btn:hover {
-  transform:translateY(-3px);
+  transform:translateY(-4px);
+  box-shadow:0 12px 25px rgba(40,61,92,.18);
 }
 
 section {
@@ -290,9 +295,26 @@ nav {
   height:350px;
 }
 
+
+.hero,
+section {
+  animation: aparecer .8s ease;
 }
 
-</style>
+
+@keyframes aparecer {
+
+from {
+opacity:0;
+transform:translateY(20px);
+}
+
+to {
+opacity:1;
+transform:translateY(0);
+}
+
+}
 
 </head>
 
