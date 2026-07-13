@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
 <meta charset="UTF-8">
@@ -17,197 +18,365 @@ box-sizing:border-box;
 
 body{
 
-font-family:Arial,Helvetica,sans-serif;
-
-background:#fafafa;
-
+font-family:Arial, Helvetica, sans-serif;
+background:#faf9f6;
 color:#283D5C;
 
 }
 
+
+header{
+
+position:absolute;
+top:0;
+width:100%;
+padding:25px;
+z-index:5;
+
+}
+
+.voltar{
+
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:15px;
+
+}
+
+
+
 .hero{
 
 height:90vh;
-
 background:url("CDA1.png") center center;
-
 background-size:cover;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 position:relative;
 
 }
+
 
 .hero::before{
 
 content:"";
-
 position:absolute;
-
 inset:0;
-
-background:rgba(0,0,0,.35);
+background:rgba(0,0,0,.38);
 
 }
 
-.hero div{
+
+.hero-conteudo{
 
 position:relative;
-
 text-align:center;
-
 color:white;
+padding:20px;
 
 }
+
 
 .hero h1{
 
-font-size:60px;
-
+font-size:64px;
+font-weight:600;
 margin-bottom:15px;
 
 }
 
+
 .hero p{
 
 font-size:22px;
+letter-spacing:1px;
 
 }
+
+
 
 .container{
 
-max-width:1300px;
-
+max-width:1200px;
 margin:auto;
-
-padding:70px 30px;
+padding:80px 30px;
 
 }
 
-.texto{
+
+
+.introducao{
 
 max-width:900px;
-
 margin:auto;
-
 text-align:center;
-
 line-height:1.8;
 
-font-size:18px;
+}
 
-margin-bottom:60px;
+
+.introducao h2{
+
+font-size:38px;
+margin-bottom:25px;
+color:#283D5C;
 
 }
+
+
+.introducao p{
+
+font-size:18px;
+color:#555;
+
+}
+
+
+.detalhes{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin:70px 0;
+
+}
+
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(40,61,92,.08);
+
+}
+
+
+.card h3{
+
+margin-bottom:15px;
+color:#283D5C;
+
+}
+
+
+.card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
 
 .galeria{
 
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-
-gap:20px;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
 
 }
+
 
 .galeria img{
 
 width:100%;
-
-border-radius:18px;
-
-transition:.3s;
-
-cursor:pointer;
+border-radius:20px;
+display:block;
+transition:.4s;
 
 }
+
 
 .galeria img:hover{
 
 transform:scale(1.03);
 
-}
-
-.botao{
+}.botao{
 
 display:block;
-
-width:260px;
-
-margin:70px auto;
-
-text-align:center;
-
+width:280px;
+margin:80px auto 30px;
 padding:18px;
-
 background:#283D5C;
-
 color:white;
-
+text-align:center;
 text-decoration:none;
-
-border-radius:10px;
-
-font-size:18px;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
 
 }
+
 
 .botao:hover{
 
+transform:translateY(-4px);
 background:#1f3049;
 
 }
+
+
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+.galeria{
+
+grid-template-columns:1fr;
+
+}
+
+
+.detalhes{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 
 </style>
 
 </head>
 
+
 <body>
+
+
+<header>
+
+<a class="voltar" href="projetos.html">
+← Voltar aos projetos
+</a>
+
+</header>
+
+
+
 
 <section class="hero">
 
-<div>
+<div class="hero-conteudo">
 
-<h1>Clínica CDA</h1>
+<h1>
+Clínica D|A
+</h1>
 
-<p>Projeto de Interiores Comerciais</p>
+
+<p>
+Projeto de Interiores Comerciais | Harmonização Facial e Estética
+</p>
+
 
 </div>
 
 </section>
 
+
+
+
 <div class="container">
 
-<div class="texto">
 
-<h2 style="margin-bottom:25px;">Sobre o projeto</h2>
+
+<section class="introducao">
+
+
+<h2>
+Uma nova identidade para um novo espaço
+</h2>
+
 
 <p>
 
-Escreve aqui a história desse projeto.
+A Clínica D|A nasceu da necessidade de transformar um novo espaço
+em um ambiente que traduzisse a personalidade da profissional e proporcionasse
+uma experiência acolhedora aos seus pacientes.
 
-Como nasceu.
+O projeto foi desenvolvido com foco em criar uma atmosfera sofisticada,
+confortável e humanizada, unindo estética, funcionalidade e identidade de marca.
 
-Qual foi o desafio.
+</p>
 
-Qual foi o conceito.
 
-Como o espaço foi pensado.
+</section>
 
-Quais materiais foram utilizados.
 
-Tudo isso aproxima muito o cliente.
+
+
+<section class="detalhes">
+
+
+
+<div class="card">
+
+<h3>
+Conceito
+</h3>
+
+<p>
+
+Um ambiente elegante e acolhedor, pensado para transmitir confiança,
+sofisticação e cuidado através da arquitetura.
 
 </p>
 
 </div>
 
-<div class="galeria">
+
+
+
+<div class="card">
+
+<h3>
+Materiais
+</h3>
+
+<p>
+
+A composição utiliza madeira, papel de parede, mármore Carrara,
+tons bege, areia e perolados, criando uma paleta atemporal e delicada.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Experiência
+</h3>
+
+<p>
+
+A iluminação intimista da recepção, os elementos sinuosos do mobiliário
+e os detalhes curvos reforçam uma sensação de conforto e acolhimento.
+
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+<section class="galeria">
+
 
 <img src="CDA1.png">
 <img src="CDA2.png">
@@ -223,16 +392,24 @@ Tudo isso aproxima muito o cliente.
 <img src="CDA12.JPEG">
 <img src="CDA13.JPEG">
 
-</div>
 
-<a class="botao" href="https://wa.me/SEUNUMERO">
+</section>
 
-Solicitar um orçamento
+
+
+
+<a class="botao" href="https://wa.me/5591985127558" target="_blank">
+
+Solicitar um projeto
 
 </a>
 
+
+
 </div>
 
+
 </body>
+
 
 </html>
