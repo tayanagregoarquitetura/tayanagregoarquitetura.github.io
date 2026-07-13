@@ -17,17 +17,45 @@ body{
 }
 
 header{
-    background:white;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+background:#ffffff;
+padding:18px 20px;
+border-bottom:1px solid #e5e7eb;
+position:sticky;
+top:0;
+z-index:10;
 }
 
-h1{
-    margin:0;
-    font-size:40px;
+.topbar{
+max-width:1150px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
 }
 
+.brand img{
+height:72px;
+width:auto;
+}
+
+nav{
+display:flex;
+gap:24px;
+}
+
+nav a{
+text-decoration:none;
+color:#283D5C;
+font-weight:600;
+font-size:15px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#637FAF;
+}
 .sub{
     text-align:center;
     margin:15px;
@@ -116,13 +144,27 @@ background:#1d2d44;
 
 <header>
 
-<h1>Projetos</h1>
+<div class="topbar">
+
+<div class="brand">
+<img src="logo.png.png" alt="Tayana Grego Arquitetura">
+</div>
+
+<nav>
+<a href="index.html#inicio">Início</a>
+<a href="index.html#servicos">Serviços</a>
+<a href="index.html#sobre">Sobre</a>
+<a href="index.html#projetos">Projetos</a>
+<a href="index.html#contato">Contato</a>
+</nav>
+
+</div>
 
 </header>
 
 <p class="sub">
 
-Conheça alguns projetos desenvolvidos pela Tayana Grego Arquitetura.
+Cada projeto traduz uma história, uma necessidade e uma solução única. Conheça alguns trabalhos desenvolvidos pelo escritório.
 
 </p>
 
